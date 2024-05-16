@@ -46,6 +46,9 @@ func (a *Adaptor) GetRequestURL(meta *meta.Meta) (string, error) {
 	case channeltype.Minimax:
 		return minimax.GetRequestURL(meta)
 	default:
+		if strings.Contains(meta.BaseURL, "only_use_this_") {
+			return GetFullRequestURL(strings.Replace(meta.BaseURL, "only_use_this_", "", 1), "", meta.ChannelType), nil
+		}
 		return GetFullRequestURL(meta.BaseURL, meta.RequestURLPath, meta.ChannelType), nil
 	}
 }
