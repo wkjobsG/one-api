@@ -5,15 +5,15 @@ COPY ./VERSION .
 COPY ./web .
 
 WORKDIR /web/default
-RUN npm install
+RUN npm install --force
 RUN DISABLE_ESLINT_PLUGIN='true' REACT_APP_VERSION=$(cat VERSION) npm run build
 
 WORKDIR /web/berry
-RUN npm install
+RUN npm install --force
 RUN DISABLE_ESLINT_PLUGIN='true' REACT_APP_VERSION=$(cat VERSION) npm run build
 
 WORKDIR /web/air
-RUN npm install
+RUN npm install --force
 RUN DISABLE_ESLINT_PLUGIN='true' REACT_APP_VERSION=$(cat VERSION) npm run build
 
 FROM golang AS builder2
