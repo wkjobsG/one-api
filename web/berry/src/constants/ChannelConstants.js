@@ -11,12 +11,18 @@ export const CHANNEL_OPTIONS = {
     value: 14,
     color: 'primary'
   },
-  // 33: {
-  //   key: 33,
-  //   text: 'AWS Claude',
-  //   value: 33,
-  //   color: 'primary'
-  // },
+  33: {
+    key: 33,
+    text: 'AWS',
+    value: 33,
+    color: 'primary'
+  },
+  37: {
+    key: 37,
+    text: 'Cloudflare',
+    value: 37,
+    color: 'success'
+  },
   3: {
     key: 3,
     text: 'Azure OpenAI',
@@ -40,6 +46,12 @@ export const CHANNEL_OPTIONS = {
     text: 'Mistral AI',
     value: 28,
     color: 'warning'
+  },
+  40: {
+    key: 40,
+    text: '字节跳动豆包',
+    value: 40,
+    color: 'primary'
   },
   15: {
     key: 15,
@@ -119,12 +131,12 @@ export const CHANNEL_OPTIONS = {
     value: 32,
     color: 'primary'
   },
-  // 34: {
-  //   key: 34,
-  //   text: 'Coze',
-  //   value: 34,
-  //   color: 'primary'
-  // },
+  34: {
+    key: 34,
+    text: 'Coze',
+    value: 34,
+    color: 'primary'
+  },
   35: {
     key: 35,
     text: 'Cohere',
@@ -148,6 +160,30 @@ export const CHANNEL_OPTIONS = {
     text: 'together.ai',
     value: 39,
     color: 'primary'
+  },
+  42: {
+    key: 42,
+    text: 'VertexAI',
+    value: 42,
+    color: 'primary'
+  },
+  43: {
+    key: 43,
+    text: 'Proxy',
+    value: 43,
+    color: 'primary'
+  },
+  44: {
+    key: 44,
+    text: 'SiliconFlow',
+    value: 44,
+    color: 'primary'
+  },
+  41: {
+    key: 41,
+    text: 'Novita',
+    value: 41,
+    color: 'purple'
   },
   8: {
     key: 8,

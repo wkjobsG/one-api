@@ -41,6 +41,10 @@ const (
 	Cloudflare
 	DeepL
 	TogetherAI
-
+	Doubao
+	Novita
+	VertextAI
+	Proxy
+	SiliconFlow
 	Dummy
 )
